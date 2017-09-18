@@ -7,10 +7,10 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"></noscript>
-
-    <link href="css/style.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <noscript>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    </noscript>
     <link href="css/print.css" rel="stylesheet" media="print">
 
     <script async>
@@ -66,6 +66,24 @@
 
       <footer>
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+
+        <script type="text/javascript">
+          /* First CSS File */
+          var giftofspeed = document.createElement('link');
+          giftofspeed.rel = 'stylesheet';
+          giftofspeed.href = 'css/style.css';
+          giftofspeed.type = 'text/css';
+          var godefer = document.getElementsByTagName('link')[0];
+          godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+          /* Second CSS File */
+          var giftofspeed2 = document.createElement('link');
+          giftofspeed2.rel = 'stylesheet';
+          giftofspeed2.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+          giftofspeed2.type = 'text/css';
+          var godefer2 = document.getElementsByTagName('link')[0];
+          godefer2.parentNode.insertBefore(giftofspeed2, godefer2);
+        </script>
       </footer>
     </div>
   </body>

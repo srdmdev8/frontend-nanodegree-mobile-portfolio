@@ -25,9 +25,9 @@ Optimizations Made
 - Simplified the calculations for the `changePizzaSizes` function:
   - Removed the `determineDx` function
   - Combined the `changePizzaSizes` and `sizeSwitcher` functions:
-   - Added variable **pizzaWidth** and made it equal to the 3 different sizes in the switch case
-   - For my **randomPizzas** varibale, I updated the `querySelector` to `getElementsByClassName`
-   - Calculated pizza sizes in the For loop using the percentage of my new **pizzaWidth** variable
+    - Added variable **pizzaWidth** and made it equal to the 3 different sizes in the switch case
+    - For my **randomPizzas** variable, I updated the `querySelector` to `getElementsByClassName`
+    - Calculated pizza sizes in the For loop using the percentage of my new **pizzaWidth** variable
 - Updated the `updatePositions` function:
   - For the **items** variable, I updated the `querySelector` to `getElementsByClassName`
   - Cached the *scrollTop* item in my **top** variable outside of the For loop

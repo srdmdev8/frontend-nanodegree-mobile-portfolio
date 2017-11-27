@@ -421,7 +421,10 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-    //Iterates through pizza elements on the page and changes their widths
+    //Iterates through pizza elements on the page and changes their widths. Got the hint from
+    //https://github.com/kwdevs/frontend-nanodegree-mobile-portfolio/blob/60FPS/views/js/main.js
+    //to add a new variable and make it equal to the sizes in the case below and then use
+    //that in place of the previous "newsize" variable.
     function changePizzaSizes(size) {
       var pizzaWidth;
       switch(size) {
@@ -485,15 +488,18 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 var frame = 0;
 
-// Moves the sliding background pizzas based on scroll position
+// Moves the sliding background pizzas based on scroll position. Also learned from this
+//project's webcast about changing the querySelectors to either getElementById or
+//getElementsByClassName.
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
   var items = document.getElementsByClassName('mover');
 
-  //cached document.body.scrollTop outside the For loop in order to optimize
-  //scripting/rendering speeds
+  //cached scrollTop outside the For loop in order to optimize
+  //scripting/rendering speeds. Learned this from the Udacity Forum at
+  //https://discussions.udacity.com/t/project-4-how-do-i-optimize-the-background-pizzas-for-loop/36302/19
   var top = document.documentElement.scrollTop || document.body.scrollTop;
 
   for (var i = 0; i < items.length; i++) {
@@ -515,7 +521,9 @@ function updatePositions() {
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
 
-// Generates the sliding pizzas when the page loads.
+// Generates the sliding pizzas when the page loads. Learned from this project's webcast
+//to decrease amount of pizzas (200 initially) to a smaller number since you can only
+//see a handful at a time.
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;

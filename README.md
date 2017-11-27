@@ -19,7 +19,7 @@ Optimizations Made
 - Updated all images to reference actual saved images within the project
 - Moved **style.css** to the footer section
 - Removed the Google Font link and added it to **style.css**
-- Added `media="print"` to print.css
+- Added `media="print"` to **print.css**
 
 #### main.js
 - Simplified the calculations for the `changePizzaSizes` function:

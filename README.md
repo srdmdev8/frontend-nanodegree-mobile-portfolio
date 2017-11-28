@@ -32,7 +32,8 @@ website as a reference
 - Updated the `updatePositions` function:
   - For the **items** variable, I updated the `querySelector` to `getElementsByClassName`
   - Cached the *scrollTop* item in my **top** variable outside of the For loop
-- In the function for the `addEventListener` that initially loads the sliding pizzas, I updated the count of 200 to 20 within the For loop. This way the page only loads 20 pizzas instead of 200 since you can only see very few pizzas at any given time
+- In the function for the `addEventListener` that initially loads the sliding pizzas, I updated the count of 200 to 32 within the For loop. This way the page only loads 32 pizzas instead of 200 since you can only see a few pizzas at any given time
+  - Within this same function, I defined the **elem** variable as well as cached the `querySelector` for *movingPizzas1* outside of the For loop 
 
 #### images
 - Added images to the main images folder that were being reference from a URL

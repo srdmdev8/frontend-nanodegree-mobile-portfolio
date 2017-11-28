@@ -7,6 +7,121 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
 
+    <style>
+      html {
+        font-size: 100%;
+        overflow-y: scroll;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: none;
+      }
+
+      body {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.61;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        color: #333;
+        background: #fff;
+      }
+
+      a {
+        color: #12C;
+      }
+
+      a:visited {
+        color: #61C;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      ul {
+        margin: 1em 0;
+        padding: 0 0 0 20px;
+      }
+
+      img {
+        border: 0;
+        max-width: 100%;
+      }
+
+      header, footer, .container {
+        max-width: 45em;
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 0 0.5em;
+        color: #C90B0B;
+      }
+
+      header img {
+        border-radius: 40px;
+        float: left;
+      }
+
+      header p {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-left: 4em;
+      }
+
+      header p span {
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+
+      .hero {
+        padding: 2em;
+        background-color: #f8f8f8;
+        font-size: 1.2em;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+      }
+
+      .content {
+        padding: 1em 1em;
+      }
+
+      .content li {
+        list-style-type: none;
+        font-size: 1.1em;
+      }
+
+      li img {
+        float: left;
+        padding-right: 1em;
+      }
+
+      li p {
+        font-size: 0.9em;
+        font-style: italic;
+      }
+
+      footer {
+        padding: 0 0.5em;
+        border-top: 1px solid #ccc;
+      }
+
+      footer span {
+        float: right;
+        font-style: italic;
+      }
+
+      @media only screen and (max-width: 480px) {
+        body {
+          font-size: 12px;
+        }
+        header p {
+          padding-left: 4.5em;
+        }
+      }
+
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    </style>
+
     <link href="css/print.css" rel="stylesheet" media="print">
 
     <script async>
@@ -22,6 +137,23 @@
   </head>
 
   <body>
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
     <header>
       <a href="/"><img src="img/profilepic.jpg"></a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
@@ -62,16 +194,6 @@
 
       <footer>
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
-
-        <script type="text/javascript">
-          /* First CSS File */
-          var giftofspeed = document.createElement('link');
-          giftofspeed.rel = 'stylesheet';
-          giftofspeed.href = 'css/style.css';
-          giftofspeed.type = 'text/css';
-          var godefer = document.getElementsByTagName('link')[0];
-          godefer.parentNode.insertBefore(giftofspeed, godefer);
-        </script>
       </footer>
     </div>
   </body>

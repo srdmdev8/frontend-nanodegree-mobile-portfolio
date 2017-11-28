@@ -17,8 +17,9 @@ Optimizations Made
 ------------------------------------------------------------------------------
 #### index.html:
 - Updated all images to reference actual saved images within the project
-- Moved **style.css** to the footer section
-- Removed the Google Font link and added it to **style.css**
+- Inlined the critical CSS from **style.css** using the [Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery)
+website as a reference
+- Removed the Google Font link and inlined it with the other critical CSS
 - Added `media="print"` to **print.css**
 
 #### main.js
@@ -37,3 +38,5 @@ Optimizations Made
 - Added images to the main images folder that were being reference from a URL
 in index.html so that I could reference the images directly from the project
 - Resized the pizzeria JPEG and saved it as a PNG
+  - Then replaced the JPEG with the optimized version Page Speed Insights provided
+- Replaced the profilepic JPEG with the optimized version Page Speed Insights provided
